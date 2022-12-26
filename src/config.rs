@@ -40,6 +40,8 @@ pub struct ResponseProfile {
     pub skip_body: Vec<String>,
 }
 
+pub struct DiffArgs{}
+
 impl DiffConfig {
     pub async fn load_yaml(path: &str) -> Result<Self>
     {
@@ -57,3 +59,18 @@ impl DiffConfig {
         self.profiles.get(name)
     }
 }
+
+impl DiffProfile {
+    pub async fn diff(&self, _args: DiffArgs) -> Result<String> {
+        // let res1 = req1.send(&args).await?;
+        // let res2 = req2.send(&args).await?;
+        //
+        // let text1 = res1.filter_text(&self.res).await?;
+        // let text2 = res2.filter_text(&self.res).await?;
+        //
+        // text_diff(&text1, &text2);
+
+        todo!()
+    }
+}
+
