@@ -1144,7 +1144,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "xdff"
+name = "xdiff"
 version = "0.1.0"
 dependencies = [
  "anyhow",
